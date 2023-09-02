@@ -36,13 +36,21 @@
   .interest{
     background-color:#333;
   }
- .interest .item,.skills .item, .projects .item{
+ .interest .item,.skills .item{
     padding:40px;
     display: flex;
     justify-content: space-around;
     @media (max-width:650px) {
         flex-wrap: wrap;
     }
+ }
+ .projects .item{
+  padding:40px;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width:650px) {
+      flex-direction: co;
+  }
  }
  .interest .item .col2{
    text-align: center;
@@ -70,6 +78,9 @@ a{
   background-color:azure;
   color: #000;
   text-align: center;
+  @media (max-width:650px) {
+    width:100%;
+  }
 }
 .hire{
   display: flex;
