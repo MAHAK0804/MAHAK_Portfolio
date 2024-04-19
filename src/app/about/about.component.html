@@ -5,7 +5,7 @@
 <div class="col">
   <div class="image">
     <img src="assets/images/mahak.jpg" width="300px" height="300px" id="img" />
-    <form action="https://drive.google.com/file/d/15v7160VdrR_NBZyBY684H3gbto_HhamR/view?usp=drivesdk">
+    <form action="https://drive.google.com/file/d/1geeH6KJQj63-XZW0qEySuFumR_7v-Rrh/view?usp=drive_link">
       <br>
       <button type="submit" name="submit" value="Submit"><b><mat-icon>download</mat-icon>Download Resume</b></button>
     </form>
@@ -241,10 +241,10 @@
       <a href="mailto:mahak191713@gmail.com"><mat-icon>upload</mat-icon>Hire Me</a>
     </div>
   </div>
-<div class="footer">
+<div class="footer"  ng-app="contactApp">
   <h1 style="text-align: center;">Contact </h1>
   <hr>
-   <div class="contact">
+   <div class="contact" >
     <div class="col-left">
      <h2>Get in Touch </h2>
      <h5>To fix me for your project</h5> 
@@ -255,31 +255,32 @@
       <br><br> <a href="https://twitter.com/MahakGa?t=i0MB7FSsgU__lI67VvWj4A&s=09"><img src="assets/images/twitter.jpg" width="40px" height="40px"> Twitter  </a>
       </div>
     <br>
-    <div class="col-right">
-      <form method="post">
+    <div class="col-right" ng-controller="ContactController">
+      <form method="post" ng-submit="submitForm()" action="http://localhost:4200/">
         <ul>
           <li>
             Name
           </li>
           <li>
-            <input type="text" placeholder="Your name" required>
+            <input type="text" placeholder="Your name"  ng-model="formData.name"required>
             </li> <li>
               Email
             </li>
             <li>
-              <input type="text" placeholder="Email" required>
+              <input type="email" placeholder="Email" ng-model="formData.email" required>
               </li> <li>
                 Message
               </li>
               <li>
-                <input type="text" placeholder="Message" required>
+                <input type="text" placeholder="Message" ng-model="formData.message" required>
                 </li>
                 <br><br>
                 <li>
-                  <button><mat-icon>send</mat-icon>Send Message</button>
+                  <button type="submit"><mat-icon>send</mat-icon>Send Message</button>
                 </li>
         </ul>
       </form>
+    
     </div>
   </div>
 </div>

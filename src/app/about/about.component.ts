@@ -18,6 +18,7 @@ export class AboutComponent {
   currentRate3 = 7;
   currentRate4 = 5;
   currentRate5 = 4;
+  
 
 
 

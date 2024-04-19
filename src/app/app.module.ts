@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
-import {AboutComponent} from './about/about.component'
+import {AboutComponent} from './about/about.component';
 
 @NgModule({
   declarations: [
