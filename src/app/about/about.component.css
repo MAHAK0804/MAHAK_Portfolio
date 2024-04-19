@@ -6,6 +6,7 @@
 .about{
     text-align: center;
 }
+
   .col{
     display: flex;
     justify-content: space-between;
@@ -13,16 +14,18 @@
     @media (max-width:650px) {
         flex-direction: column;
     }
+    
   }
   .col .content{
     padding:22px;
     text-align: justify;
   }
-  .col .content ul{
+  .col .content ul,li{
     text-align:left;
     
 
   }
+  
   button{
     border: 3px solid #000;
     border-radius: 10px;
