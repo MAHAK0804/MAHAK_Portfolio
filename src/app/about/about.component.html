@@ -225,27 +225,27 @@
       </div>
     <br>
     <div class="col-right" ng-controller="ContactController">
-      <form method="post" ng-submit="submitForm()" action="http://localhost:4200/">
+      <form method="post">
         <ul>
           <li>
             Name
           </li>
           <li>
-            <input type="text" placeholder="Your name"  ng-model="formData.name"required>
+            <input type="text" placeholder="Your name"  ng-model="name" ng-modelOption="{standalone: true}" required>
             </li> <li>
               Email
             </li>
             <li>
-              <input type="email" placeholder="Email" ng-model="formData.email" required>
+              <input type="email" placeholder="Email" ng-model="email" ng-modelOption="{standalone: true}" required>
               </li> <li>
                 Message
               </li>
               <li>
-                <input type="text" placeholder="Message" ng-model="formData.message" required>
+                <input type="text" placeholder="Message" ng-model="message" ng-modelOption="{standalone: true}" required>
                 </li>
                 <br><br>
                 <li>
-                  <button type="submit"><mat-icon>send</mat-icon>Send Message</button>
+                  <button type="submit" (click)="sumbit()"><mat-icon>send</mat-icon>Send Message</button>
                 </li>
         </ul>
       </form>
