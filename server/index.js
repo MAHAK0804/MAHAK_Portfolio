@@ -6,7 +6,7 @@ mongoose.set('strictQuery', true);
 const cors=require('cors');
 var routes= require('./routes/route');
 
-mongoose.connect("mongodb+srv://mahakdeveloper0804:Mahak%40080204@cluster0.lpbdmkv.mongodb.net/Portfolio")
+mongoose.connect("mongodb://localhost:27017/Portfolio")
 .then(()=>console.log("DB connected"));
 
 app.listen(8000);
