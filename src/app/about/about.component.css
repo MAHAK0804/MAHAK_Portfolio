@@ -113,10 +113,13 @@ a{
   display: flex;
   justify-content: space-around;
   padding: 70px;
-  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: azure;
   @media(max-width:650px){
     flex-wrap:wrap;
+    gap:1rem;
   }
 
  
@@ -128,11 +131,14 @@ a{
 .contact ul{
   list-style:none;
 }
-.contact input[type="text"],.contact input[type="email"]{
-  padding: 20px;
-  border-radius: 20px;
-  width: 700px;
-  @media (max-width:650px) {
-    width:230px;
+.contact .col-left .social{
+  @media(max-width:650px){
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    gap: 3rem;
+
   }
 }

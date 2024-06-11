@@ -167,6 +167,24 @@
     </div>
     
     <div class="item">
+      <div class="col2">
+        <img src="assets/images/MACDOC.gif" width="150px" height="150px">
+        <h3>MACDOC</h3>
+        <br>
+        <ngb-rating [(rate)]="currentRate3"></ngb-rating>
+        <br>
+        <br>
+        
+        <p>
+          I have been working tirelessly to develop an innovative chat application(MACDOC) 
+          that prioritizes user experience, security, and seamless communication. 
+          Whether you're connecting with colleagues, friends, or family.
+          
+          <a href="https://chat-application-lovat-ten.vercel.app/login"><mat-icon>link</mat-icon></a>
+        </p>
+      
+      </div>
+     
 
       <div class="col2">
         <img src="assets/images/portfolio.png" width="150px" height="150px">
@@ -218,39 +236,16 @@
      <h2>Get in Touch </h2>
      <h5>To fix me for your project</h5> 
      <br>
-      <a href="https://wa.me/918607483001"><img src="assets/images/whatsapp.png" width="40px" height="40px"> Whatsapp</a>
-      <br><br><a href="https://instagram.com/mahakgarg_3001?igshid=ZDdkNTZiNTM="><img src="assets/images/instagram.jpg" width="40px" height="40px"> Instagram</a>
-      <br><br> <a href="https://www.linkedin.com/in/mahak-garg-09197523b"><img src="assets/images/linkedin.png" width="40px" height="40px"> Linkedin</a>
-      <br><br> <a href="https://twitter.com/MahakGa?t=i0MB7FSsgU__lI67VvWj4A&s=09"><img src="assets/images/twitter.jpg" width="40px" height="40px"> Twitter  </a>
+     <div class="social">
+
+       <a href="https://wa.me/918607483001"><img src="assets/images/whatsapp.png" width="40px" height="40px"> Whatsapp</a>
+       <a href="https://instagram.com/mahakgarg_3001?igshid=ZDdkNTZiNTM="><img src="assets/images/instagram.jpg" width="40px" height="40px"> Instagram</a>
+       <a href="https://www.linkedin.com/in/mahak-garg-09197523b"><img src="assets/images/linkedin.png" width="40px" height="40px"> Linkedin</a>
+       <a href="https://twitter.com/MahakGa?t=i0MB7FSsgU__lI67VvWj4A&s=09"><img src="assets/images/twitter.jpg" width="40px" height="40px"> Twitter  </a>
+      </div>
       </div>
     <br>
-    <div class="col-right" ng-controller="ContactController">
-      <form method="post">
-        <ul>
-          <li>
-            Name
-          </li>
-          <li>
-            <input type="text" placeholder="Your name"  ng-model="name" ng-modelOption="{standalone: true}" required>
-            </li> <li>
-              Email
-            </li>
-            <li>
-              <input type="email" placeholder="Email" ng-model="email" ng-modelOption="{standalone: true}" required>
-              </li> <li>
-                Message
-              </li>
-              <li>
-                <input type="text" placeholder="Message" ng-model="message" ng-modelOption="{standalone: true}" required>
-                </li>
-                <br><br>
-                <li>
-                  <button type="submit" (click)="sumbit()"><mat-icon>send</mat-icon>Send Message</button>
-                </li>
-        </ul>
-      </form>
-    
-    </div>
+  
   </div>
 </div>
  
